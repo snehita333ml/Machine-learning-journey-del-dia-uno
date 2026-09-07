@@ -30,7 +30,7 @@ INFO ABOUT HOUSE PRICE PREDICTOR AS FOLLOWS: -
       - Matplotlib (python tool for making plots through visualisation)
       - Google Colab - .ipynb file (the IDE where this whole training code has been executed)
 
-# Gradient Descent from Scratch 📉
+# Gradient Descent from Scratch 📉 with the help of linear regression algorithm
 
 Built using **only NumPy** — no sklearn, no black box.
 
