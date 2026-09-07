@@ -29,4 +29,59 @@ INFO ABOUT HOUSE PRICE PREDICTOR AS FOLLOWS: -
       - Scikit-Learn (Machine Learning tool of python)
       - Matplotlib (python tool for making plots through visualisation)
       - Google Colab - .ipynb file (the IDE where this whole training code has been executed)
-      
+
+# Gradient Descent from Scratch 📉
+
+Built using **only NumPy** — no sklearn, no black box.
+
+## What this project does
+Implements linear regression by building gradient descent 
+from scratch, without using any ML libraries.
+The model learns the relationship between house sizes and 
+prices purely through math and iteration.
+
+## Concepts covered
+- What gradient descent actually is under the hood
+- How weights (w) and bias (b) update every iteration
+- What loss/cost function means and why it decreases
+- Why sklearn's LinearRegression().fit() works the way it does
+
+## How it works
+Start with random weights (w=0, b=0)
+↓
+Make a prediction: y_pred = w * X + b
+↓
+Measure how wrong it is (MSE loss)
+↓
+Calculate gradients (which direction to adjust)
+↓
+Update weights: w = w - learning_rate * gradient
+↓
+Repeat 1000 times → model learns
+
+
+## Results
+| | Value |
+|---|---|
+| True w | 3.0 |
+| Learned w | 2.79 |
+| True b | 4.0 |
+| Learned b | 4.18 |
+| Final Loss | 0.807 |
+
+Model reached **93% accuracy** on true parameters 
+using pure math.
+
+## What I learned
+Most people use sklearn's LinearRegression() as a black box.
+Building this from scratch showed me exactly what happens 
+inside that one line of code — the same fundamental process 
+that trains every ML model in the world, including 
+large language models like ChatGPT and Claude.
+
+## Tech stack
+- Python 3.14
+- NumPy (math only — no ML libraries)
+- Matplotlib (visualization)
+
+
